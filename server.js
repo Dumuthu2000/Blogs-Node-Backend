@@ -5,8 +5,8 @@ const cors = require('cors');
 
 
 //Server configuration
-const PORT = process.env.PORT
-app.listen(PORT,()=>{
+const PORT = 8080
+app.listen(process.env.PORT || PORT,()=>{
     try{
         console.log(`Server is running on port ${PORT}`);
     }catch{
