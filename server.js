@@ -8,7 +8,7 @@ const cors = require('cors');
 const port = 8080
 app.listen(process.env.PORT || port,()=>{
     try{
-        console.log(`Server is running on port ${PORT}`);
+        console.log(`Server is running on port ${port}`);
     }catch{
         console.log("Server configuration error");
     }
