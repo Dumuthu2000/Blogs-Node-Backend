@@ -22,6 +22,6 @@ app.use(cors());
 const UserRouter = require('./Routers/UserRouter');
 app.use('/',UserRouter);
 
-// //Psts routes
-// const PostRouter = require('./Routers/PostsRouter')
-// app.use('/',PostRouter)
+const postRouter = require('./Routers/PostsRouter');
+app.use('/',postRouter)
+
